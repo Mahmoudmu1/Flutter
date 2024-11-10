@@ -40,6 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
     );
   }
 }*/
+library;
 
 import 'package:flutter/material.dart';
 import 'package:my_member_link/views/login_screen.dart';
@@ -100,7 +101,7 @@ class _SplashScreenState extends State<SplashScreen>
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              AnimatedText("Welcome to MyMemberLink"),
+              const AnimatedText("Welcome to MyMemberLink"),
               const SizedBox(height: 20),
               const Text(
                 "Your trusted membership app",
@@ -127,7 +128,7 @@ class _SplashScreenState extends State<SplashScreen>
 class AnimatedText extends StatefulWidget {
   final String text;
 
-  const AnimatedText(this.text, {Key? key}) : super(key: key);
+  const AnimatedText(this.text, {super.key});
 
   @override
   State<AnimatedText> createState() => _AnimatedTextState();
