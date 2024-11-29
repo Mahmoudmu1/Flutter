@@ -1,8 +1,10 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:my_member_link/myconfig.dart';
-import 'package:my_member_link/views/main_screen.dart';
+import 'package:my_member_link/views/newsletter/news_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

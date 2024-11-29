@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:my_member_link/myconfig.dart';
-import 'package:my_member_link/views/main_screen.dart';
-import 'package:my_member_link/views/register_screen.dart';
+import 'package:my_member_link/views/newsletter/news_screen.dart';
+import 'package:my_member_link/views/auth/register_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 
@@ -211,6 +211,7 @@ class _LoginScreenState extends State<LoginScreen> {
       prefs.setString("email", email);
       prefs.setString("password", pass);
       prefs.setBool("rememberme", value);
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text("Preferences Stored"),
         backgroundColor: Colors.green,
@@ -223,6 +224,7 @@ class _LoginScreenState extends State<LoginScreen> {
       emailcontroller.text = "";
       passwordcontroller.text = "";
       setState(() {});
+      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         content: Text("Preferences Removed"),
         backgroundColor: Colors.red,

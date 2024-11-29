@@ -1,3 +1,5 @@
+// ignore_for_file: dangling_library_doc_comments, slash_for_doc_comments, unnecessary_import
+
 /**import 'package:flutter/material.dart';
 /**import 'package:flutter/widgets.dart';*/
 import 'package:my_member_link/views/login_screen.dart';
@@ -39,11 +41,11 @@ class _SplashScreenState extends State<SplashScreen> {
       ),
     );
   }
-}*/
-library;
+}*/ //
 
 import 'package:flutter/material.dart';
-import 'package:my_member_link/views/login_screen.dart';
+import 'package:flutter/widgets.dart';
+import 'package:my_member_link/views/auth/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
