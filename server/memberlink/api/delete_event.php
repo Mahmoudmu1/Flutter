@@ -6,11 +6,11 @@ if ( !isset( $_POST ) ) {
 }
 
 include_once( 'dbconnect.php' );
-$newsid = ( $_POST[ 'newsid' ] );
+$eventid = ( $_POST[ 'eventid' ] );
 
-$sqldeletenews = "DELETE FROM `tbl_news` WHERE `news_id` = '$newsid'";
+$sqldeleteevent = "DELETE FROM `tbl_events` WHERE `event_id` = '$eventid'";
 
-if ( $conn->query( $sqldeletenews ) === TRUE ) {
+if ( $conn->query( $sqldeleteevent ) === TRUE ) {
     $response = array( 'status' => 'success', 'data' => null );
     sendJsonResponse( $response );
 } else {

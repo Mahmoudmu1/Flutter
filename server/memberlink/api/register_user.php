@@ -17,10 +17,10 @@ $sqlinsert = "INSERT INTO `tbl_admins` (`admin_fullname`, `admin_gender`, `admin
               VALUES ('$fullName', '$gender', '$email', '$phone', '$password')";
 
 if ($conn->query($sqlinsert) === TRUE) {
-	$response = array('status' => 'success', 'data' => null);
+	$response = array('status' => 'success', 'data' => $sqlinsert);
     sendJsonResponse($response);
 }else{
-	$response = array('status' => 'failed', 'data' => null);
+	$response = array('status' => 'failed', 'data' => $sqlinsert);
 	sendJsonResponse($response);
 }
 

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Define source and destination paths
-source="/Applications/XAMPP/xamppfiles/htdocs/memberlink/"
-destination="/Users/mahmoud/Desktop/Flutter/my_member_link_admin/my_member_link/server/memberlink/"
+source="/Users/mahmoud/Desktop/Flutter/my_member_link_admin/my_member_link/server/memberlink"
+destination="/Applications/XAMPP/xamppfiles/htdocs/memberlink/"
 
 # Check if source directory exists
 if [ ! -d "$source" ]; then
