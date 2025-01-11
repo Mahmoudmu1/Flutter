@@ -74,7 +74,7 @@ class MyDrawer extends StatelessWidget {
             },
           ),
           const ListTile(
-            title: Text("Members"),
+            title: Text("Membership"),
           ),
           const ListTile(
             title: Text("Payments"),
